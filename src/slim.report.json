@@ -1,0 +1,243 @@
+{
+  "version": "1.1",
+  "engine": "linux|Transformer|1.40.1|9c5e69ab1fd4564b0a5426d47be038155e63e4c1|2023-04-05_11:22:53PM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Ubuntu",
+    "version": "22.04",
+    "display_name": "Ubuntu 22.04.2 LTS"
+  },
+  "type": "build",
+  "state": "done",
+  "target_reference": "c5a886119d0c",
+  "system": {
+    "type": "",
+    "release": "",
+    "distro": {
+      "name": "",
+      "version": "",
+      "display_name": ""
+    }
+  },
+  "source_image": {
+    "identity": {
+      "id": "sha256:c5a886119d0cb72362ffe9cfe6227d11484b885780f5d07f20ccc0dfc40c82fa",
+      "tags": [
+        "latest"
+      ],
+      "names": [
+        "aminmah/example-cmake:latest"
+      ]
+    },
+    "size": 109503256,
+    "size_human": "110 MB",
+    "create_time": "2023-04-09T15:17:40Z",
+    "author": "Christian Berger christian.berger@gu.se",
+    "docker_version": "",
+    "architecture": "arm64",
+    "os": "linux",
+    "labels": {
+      "org.opencontainers.image.ref.name": "ubuntu",
+      "org.opencontainers.image.version": "22.04"
+    },
+    "env_vars": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ],
+    "container_entry": {
+      "exe_path": ""
+    }
+  },
+  "minified_image_size": 1596024,
+  "minified_image_size_human": "1.6 MB",
+  "minified_image": "aminmah/example-cmake.slim",
+  "minified_image_has_data": true,
+  "minified_by": 68.61003092685323,
+  "artifact_location": "/tmp/slim-state/.slim-state/images/c5a886119d0cb72362ffe9cfe6227d11484b885780f5d07f20ccc0dfc40c82fa/artifacts",
+  "container_report_name": "creport.json",
+  "seccomp_profile_name": "aminmah-example-cmake-seccomp.json",
+  "apparmor_profile_name": "aminmah-example-cmake-apparmor-profile",
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:c5a886119d0cb72362ffe9cfe6227d11484b885780f5d07f20ccc0dfc40c82fa",
+      "full_name": "aminmah/example-cmake:latest",
+      "repo_name": "aminmah/example-cmake",
+      "version_tag": "latest",
+      "raw_tags": [
+        "aminmah/example-cmake:latest"
+      ],
+      "create_time": "2023-04-09T15:17:40Z",
+      "new_size": 109503256,
+      "new_size_human": "110 MB",
+      "instructions": [
+        {
+          "type": "ARG",
+          "time": "2023-03-08T04:32:38Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "RELEASE",
+          "command_snippet": "ARG RELEASE",
+          "command_all": "ARG RELEASE",
+          "inst_set_time_bucket": "2023-03-08T05:30:00+01:00"
+        },
+        {
+          "type": "ARG",
+          "time": "2023-03-08T04:32:38Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "LAUNCHPAD_BUILD_ARCH",
+          "command_snippet": "ARG LAUNCHPAD_BUILD_ARCH",
+          "command_all": "ARG LAUNCHPAD_BUILD_ARCH",
+          "inst_set_time_bucket": "2023-03-08T05:30:00+01:00"
+        },
+        {
+          "type": "LABEL",
+          "time": "2023-03-08T04:32:38Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "org.opencontainers.image.ref.name=ubuntu",
+          "command_snippet": "LABEL org.opencontainers.image.ref.name=ubun...",
+          "command_all": "LABEL org.opencontainers.image.ref.name=ubuntu",
+          "inst_set_time_bucket": "2023-03-08T05:30:00+01:00"
+        },
+        {
+          "type": "LABEL",
+          "time": "2023-03-08T04:32:39Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "org.opencontainers.image.version=22.04",
+          "command_snippet": "LABEL org.opencontainers.image.version=22.04",
+          "command_all": "LABEL org.opencontainers.image.version=22.04",
+          "inst_set_time_bucket": "2023-03-08T05:30:00+01:00"
+        },
+        {
+          "type": "ADD",
+          "time": "2023-03-08T04:32:40Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 69212233,
+          "size_human": "69 MB",
+          "params": "file:79b36308bc382d9cae7197b4cecc21430f4e8f3e8bec3547d0f00bcff7681e60 in /",
+          "command_snippet": "ADD file:79b36308bc382d9cae7197b4cecc21430f4...",
+          "command_all": "ADD file:79b36308bc382d9cae7197b4cecc21430f4e8f3e8bec3547d0f00bcff7681e60 /",
+          "target": "/",
+          "source_type": "file",
+          "inst_set_time_bucket": "2023-03-08T05:30:00+01:00"
+        },
+        {
+          "type": "CMD",
+          "time": "2023-03-08T04:32:41Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"/bin/bash\"]\n",
+          "command_snippet": "CMD [\"/bin/bash\"]\n",
+          "command_all": "CMD [\"/bin/bash\"]\n",
+          "inst_set_time_bucket": "2023-03-08T05:30:00+01:00"
+        },
+        {
+          "type": "MAINTAINER",
+          "time": "2023-03-27T15:07:47Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "Christian Berger christian.berger@gu.se",
+          "command_snippet": "MAINTAINER Christian Berger christian.berger...",
+          "command_all": "MAINTAINER Christian Berger christian.berger@gu.se",
+          "comment": "buildkit.dockerfile.v0",
+          "is_buildkit_instruction": true,
+          "inst_set_time_bucket": "2023-03-27T17:00:00+02:00",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "RUN",
+          "time": "2023-03-27T15:07:47Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 39144335,
+          "size_human": "39 MB",
+          "command_snippet": "RUN apt-get update -y && \\\n\tapt-get upgrade ...",
+          "command_all": "RUN apt-get update -y && \\\n\tapt-get upgrade -y && \\\n\tapt-get dist-upgrade -y",
+          "system_commands": [
+            "apt-get update -y",
+            "apt-get upgrade -y",
+            "apt-get dist-upgrade -y"
+          ],
+          "comment": "buildkit.dockerfile.v0",
+          "is_buildkit_instruction": true,
+          "inst_set_time_bucket": "2023-03-27T17:00:00+02:00",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "WORKDIR",
+          "time": "2023-03-27T15:07:47Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "/opt",
+          "command_snippet": "WORKDIR /opt",
+          "command_all": "WORKDIR /opt",
+          "system_commands": [
+            "mkdir -p /opt"
+          ],
+          "comment": "buildkit.dockerfile.v0",
+          "is_buildkit_instruction": true,
+          "inst_set_time_bucket": "2023-03-27T17:00:00+02:00",
+          "inst_set_time_index": 1
+        },
+        {
+          "type": "COPY",
+          "time": "2023-04-09T15:17:40Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 1146688,
+          "size_human": "1.1 MB",
+          "params": "/tmp/helloworld .",
+          "command_snippet": "COPY /tmp/helloworld .",
+          "command_all": "COPY /tmp/helloworld .",
+          "comment": "buildkit.dockerfile.v0",
+          "is_buildkit_instruction": true,
+          "inst_set_time_bucket": "2023-04-09T17:15:00+02:00",
+          "inst_set_time_index": 2
+        },
+        {
+          "type": "ENTRYPOINT",
+          "time": "2023-04-09T15:17:40Z",
+          "is_last_instruction": true,
+          "is_nop": false,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"/opt/helloworld\"]\n",
+          "command_snippet": "ENTRYPOINT [\"/opt/helloworld\"]\n",
+          "command_all": "ENTRYPOINT [\"/opt/helloworld\"]\n",
+          "comment": "buildkit.dockerfile.v0",
+          "raw_tags": [
+            "aminmah/example-cmake:latest"
+          ],
+          "is_buildkit_instruction": true,
+          "inst_set_time_bucket": "2023-04-09T17:15:00+02:00",
+          "inst_set_time_index": 2
+        }
+      ]
+    }
+  ],
+  "image_created": true,
+  "image_build_engine": "docker"
+}
